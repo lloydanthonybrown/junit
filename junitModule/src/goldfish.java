@@ -9,7 +9,7 @@ public class Goldfish {
     private String color;
 
     public int sum(int var1, int var2){
-        System.out.println("Adding values: " + var1 " + " + var2);
+        System.out.println("Adding values: " + var1 + " + " + var2);
         return var1 + var2;
     }
 
@@ -17,8 +17,12 @@ public class Goldfish {
         if (x > 999){
             throw new IllegalArgumentException("X should be less than 1000");
         }
-        return x / y;
+        return x * y;
     }
+
+
+
+
 //    public void main (String[] args){
 //
 //    }
