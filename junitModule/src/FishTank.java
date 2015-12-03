@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -8,11 +9,11 @@ public class FishTank {
 
     private String finalGoal;
     private HashMap<String, GoldfishBean> goldfishes;
-    private HashMap<String, PiranhaBean> piranhas;
+    private ArrayList piranhas;
 
     public FishTank(){
         goldfishes = new HashMap<String, GoldfishBean>();
-        piranhas = new HashMap<String, PiranhaBean>();
+        piranhas = new ArrayList();
     }
 
     public String getFinalGoal() {
@@ -39,10 +40,14 @@ public class FishTank {
     }
 
     public void addPiranha(int index, PiranhaBean aPiranha){
-        // Verify that the given key information is not null.
-        String key = aPiranha.getName();
-        piranhas.put(key, aPiranha);
-        count++;
+        try{
+            piranhas.add(index, aPiranha);
+            count++;
+        }
+        catch (IndexOutOfBoundsException e){
+            throw new IndexOutOfBoundsException();
+        }
+
     }
 
     // Method for removing fish

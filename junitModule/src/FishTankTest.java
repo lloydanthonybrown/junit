@@ -3,6 +3,7 @@
  */
 
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 
 import java.lang.reflect.Field;
 
@@ -23,6 +24,14 @@ public class FishTankTest {
         // int name, int gills, int lungs, boolean hasTeeth, String waterPreference, String foodPreference
         lloyd   = new PiranhaBean("lloyd",4,2,true,"salt","cows");
         evan    = new PiranhaBean("evan",4,2,false,"fresh","spoons");
+    }
+
+    // It told me that this test should be static. Why?
+    // I originally had this annotated as @AfterClass, but it didn't like that.
+    @After
+    public void happyMessage(){
+        String message = "Where's your happy face?";
+        assertEquals("Where's your happy face?",message);
     }
 
     @Test
@@ -70,36 +79,35 @@ public class FishTankTest {
     }
 
     // Make sure that an exception was successfully thrown
+    // Is this the wrong type of exception to be throwing?
+    // Why is this test failing?
     @Test (expected = IndexOutOfBoundsException.class)
     public void testAddPiranha(){
-        testTank.addPiranha(-1, evan);
+//        try {
+            testTank.addPiranha(0, evan);
+//        }
+//        catch (Exception e){
+//            System.out.println("The index cannot be negative.");
+//        }
 
     }
 
+    @Rule
+    public ExpectedException thrown= ExpectedException.none();
 
-//    Goldfish calculation = new Goldfish();
-//    int sum = calculation.sum(2,5);
-//    int testSum = 7;
-//
-//    @Test
-//    public void testSum(){
-//        System.out.println("@Test sum(): " + sum + " = " + testSum);
-//        assertEquals(sum, testSum);
-//    }
-//
-//    // Why does this not return an error when running it? It doesn't meet the requirements for the original method.
-//    @Test(expected = IllegalArgumentException.class)
-//    public void testExceptionIsThrown(){
-//        Goldfish tester = new Goldfish();
-//        tester.multiply(1000,5);
-//    }
-//
-//    @Test
-//    public void testMultiply(){
-//        Goldfish tester = new Goldfish();
-//        assertEquals("10 x 5 must be 50", 50, tester.multiply(10,5));
-//    }
-//
+    @Test
+    public void throwsNothing(){
+        // So this just says that if nothing is thrown, it passes this particular test?
+    }
+
+    @Test
+    public void throwsExceptionWithSpecificType(){
+        // I see that this test is referring to the rule, but I don't know what the NullPointerException does.
+        // What expression is it expecting? I added .class to it, but I have no idea what that did.
+        thrown.expect(NullPointerException.class);
+        throw new NullPointerException();
+    }
+
 //    @Test
 //    public void testJump() {
 //
