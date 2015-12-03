@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d03a7dd-49e2-4b5d-b9d5-0fe00b762eb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GoldfishTest.java" afterPath="$PROJECT_DIR$/src/FishTankTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FishBean.java" afterPath="$PROJECT_DIR$/src/FishBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FishTank.java" afterPath="$PROJECT_DIR$/src/FishTank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GoldfishBean.java" afterPath="$PROJECT_DIR$/src/GoldfishBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PirahnaBean.java" afterPath="$PROJECT_DIR$/src/PirahnaBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FishTankTest.java" afterPath="$PROJECT_DIR$/src/FishTankTest.java" />
     </list>
     <ignored path="junitModule.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +71,8 @@
       <file leaf-file-name="FishTankTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FishTankTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44444445">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.3888889">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -237,7 +231,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../alberto/JUnit/MySandbox/StudentBean.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../collections" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
@@ -729,12 +723,12 @@
       <updated>1449016443808</updated>
       <workItem from="1449016444922" duration="2286000" />
       <workItem from="1449031323042" duration="922000" />
-      <workItem from="1449075815089" duration="7446000" />
+      <workItem from="1449075815089" duration="7839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10654000" />
+    <option name="totallyTimeSpent" value="11047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1006,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FishTankTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44444445">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.3888889">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

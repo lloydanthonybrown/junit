@@ -4,7 +4,7 @@ import java.io.Serializable;
  * Created by Lloyd on 12/1/2015.
  */
 public class FishBean implements Serializable {
-    private int name;
+    private String name;
     private int gills;
     private int lungs;
 
@@ -12,16 +12,16 @@ public class FishBean implements Serializable {
 
     }
 
-    public FishBean (int name, int gills, int lungs){
+    public FishBean (String name, int gills, int lungs){
         this.name = name;
         this.gills = gills;
         this.lungs = lungs;
     }
 
-    public int getName() {
+    public String getName() {
         return this.name;
     }
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
     public int getGills() {

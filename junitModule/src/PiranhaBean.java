@@ -1,13 +1,13 @@
 /**
  * Created by Lloyd on 12/1/2015.
  */
-public class PirahnaBean extends FishBean{
+public class PiranhaBean extends FishBean{
     private boolean hasTeeth;
     private String waterPreference;
     private String foodPreference;
 
-    public PirahnaBean(int fins, int gills, int lungs, boolean hasTeeth, String waterPreference, String foodPreference ){
-        super(fins, gills, lungs);
+    public PiranhaBean(String name, int gills, int lungs, boolean hasTeeth, String waterPreference, String foodPreference ){
+        super(name, gills, lungs);
         this.hasTeeth = hasTeeth;
         this.waterPreference = waterPreference;
         this.foodPreference = foodPreference;

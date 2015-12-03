@@ -6,8 +6,8 @@ public class GoldfishBean extends FishBean{
     private String nemesis;
     private int size;
 
-    public GoldfishBean(int fins, int gills, int lungs, String color, String nemesis, int size){
-        super(fins, gills, lungs);
+    public GoldfishBean(String name, int gills, int lungs, String color, String nemesis, int size){
+        super(name, gills, lungs);
         this.color = color;
         this.size = size;
         this.nemesis = nemesis;
