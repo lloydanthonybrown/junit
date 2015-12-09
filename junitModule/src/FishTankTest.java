@@ -84,7 +84,7 @@ public class FishTankTest {
     @Test (expected = IndexOutOfBoundsException.class)
     public void testAddPiranha(){
 //        try {
-            testTank.addPiranha(0, evan);
+            testTank.addPiranha(-1, evan);
 //        }
 //        catch (Exception e){
 //            System.out.println("The index cannot be negative.");
